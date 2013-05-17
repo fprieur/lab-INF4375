@@ -40,5 +40,6 @@ rl.question("Que pensez-vous de node.js ?", gerer_reponse);
 console.log("\n\nLe programme va se terminer.")
 
 1. Avant d'exécuter ce code, que va-t-il se passer selon vous ?
+le code lira le fichier que l'on execute et écrire sur la sortie standard les console.log dans leur ordre d'appellation
 
 2. Exécutez le code, et tentez de comprendre pourquoi la phrase Le programme va se terminer. ne s'affiche pas avant que le programme ne quitte.
