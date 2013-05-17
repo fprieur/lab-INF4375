@@ -1,4 +1,4 @@
-Exercice 1
+﻿Exercice 1
 
 Le premier exercice consiste à se familiariser à node.js en codant directement dans la console (shell). Pour Windows il s'agit de Node.js et non pas Node.js command prompt
 
@@ -7,6 +7,43 @@ Node.js est un framework javascript orienté serveur, à la différence du javas
 Ouvrez une console node.js. Sous Windows, exécuter l'application Node.js, sous Mac et GNU/Linux, en ligne de commande exécuter node.
 Utilisez console.log pour écrire du texte vers la sortie standard (stdout).
 La console de node.js possède des fonctionalités d'autocomplétion! Dans la console tappez console. (avec le point) puis appuyer sur la touche tab du clavier. Vous verrez toutes les méthodes accessible à partir de console.
-Quelle est la différence entre les méthodes console.log et console.error ?
-Avec l'autocomplétion, trouvez la méthode du module os qui permet d'obtenir l'information sur le processeur (CPU).
-Encore avec le module os, calculer la quantité de mémoire (RAM) utilisé par le système d'exploitation et l'afficher à l'écran.
+1. Quelle est la différence entre les méthodes console.log et console.error ?
+2. Avec l'autocomplétion, trouvez la méthode du module os qui permet d'obtenir l'information sur le processeur (CPU).
+3. Encore avec le module os, calculer la quantité de mémoire (RAM) utilisé par le système d'exploitation et l'afficher à l'écran.
+
+1. Console.log écrit sur le canal standard tandis que console.error écrit sur le canal de sortie d'erreur
+2. os.cpus()
+3. var memoire = os.totalmem()
+	console.log(memoire)
+
+8557842432
+
+
+
+
+Exercice 2
+
+Pour cet exercice et les exercices à suivre, vous pouvez écrire le code dans un fichier et l'exécuter directement à la ligne de commande avec node nom_du_fichier.js. Pour les utilisateurs de Windows, vous pouvez obtenir la ligne de commande en exécutant le script Node.js command prompt.
+
+Cet exercice a pour objectif de vous familiariser avec l'asynchronisme de Node.js.
+
+Voici un exemple de code Node.js :
+
+var readline = require('readline');
+var rl = readline.createInterface({input: process.stdin, output: process.stdout});
+console.log("\n\nJe suis au début du code source.")
+var gerer_reponse = function(reponse) {
+    console.log("Voici la réponse : ", reponse);
+    rl.close();
+}
+rl.question("Que pensez-vous de node.js ?", gerer_reponse);
+console.log("\n\nLe programme va se terminer.")
+Avant d'exécuter ce code, que va-t-il se passer selon vous ?
+
+Exécutez le code, et tentez de comprendre pourquoi la phrase Le programme va se terminer. ne s'affiche pas avant que le programme ne quitte.
+
+Quelle modification doit être apportée pour que le message Le programme va se terminer soit vraiment affiché lorsque le programme se termine?
+
+Coder une application node.js qui lit un fichier de manière asynchrone (créer-en un et mettez quelques lignes dedans) et qui affiche le contenu de ce fichier à la ligne de commande. Indice : utilisez la méthode fs.readFile.
+
+Il existe la méthode fs.readFileSync. Quelle est la différence avec fs.readFile ?
