@@ -1,0 +1,12 @@
+Exercice 1
+
+Le premier exercice consiste à se familiariser à node.js en codant directement dans la console (shell). Pour Windows il s'agit de Node.js et non pas Node.js command prompt
+
+Node.js est un framework javascript orienté serveur, à la différence du javascript dans les navigateurs.
+
+Ouvrez une console node.js. Sous Windows, exécuter l'application Node.js, sous Mac et GNU/Linux, en ligne de commande exécuter node.
+Utilisez console.log pour écrire du texte vers la sortie standard (stdout).
+La console de node.js possède des fonctionalités d'autocomplétion! Dans la console tappez console. (avec le point) puis appuyer sur la touche tab du clavier. Vous verrez toutes les méthodes accessible à partir de console.
+Quelle est la différence entre les méthodes console.log et console.error ?
+Avec l'autocomplétion, trouvez la méthode du module os qui permet d'obtenir l'information sur le processeur (CPU).
+Encore avec le module os, calculer la quantité de mémoire (RAM) utilisé par le système d'exploitation et l'afficher à l'écran.
