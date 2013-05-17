@@ -50,4 +50,4 @@ console.log("\n\nLe programme va se terminer.")
 5. Il existe la méthode fs.readFileSync. Quelle est la différence avec fs.readFile ?
 
 
-1. Je crois que le code lira un fichier et va envoyer sur le canal standard de sortie la lecture qu'il fait du fichier
+1. Je crois que le code lira un fichier et va envoyer sur le canal standard de sortie la lecture qu'il fait du fichier.
