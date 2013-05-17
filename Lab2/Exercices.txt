@@ -42,9 +42,3 @@ console.log("\n\nLe programme va se terminer.")
 1. Avant d'exécuter ce code, que va-t-il se passer selon vous ?
 
 2. Exécutez le code, et tentez de comprendre pourquoi la phrase Le programme va se terminer. ne s'affiche pas avant que le programme ne quitte.
-
-3 . Quelle modification doit être apportée pour que le message Le programme va se terminer soit vraiment affiché lorsque le programme se termine?
-
-4. Coder une application node.js qui lit un fichier de manière asynchrone (créer-en un et mettez quelques lignes dedans) et qui affiche le contenu de ce fichier à la ligne de commande. Indice : utilisez la méthode fs.readFile.
-
-5. Il existe la méthode fs.readFileSync. Quelle est la différence avec fs.readFile ?
