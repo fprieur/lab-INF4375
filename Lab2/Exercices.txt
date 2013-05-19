@@ -43,3 +43,21 @@ console.log("\n\nLe programme va se terminer.")
 le code lira le fichier que l'on execute et écrire sur la sortie standard les console.log dans leur ordre d'appellation
 
 2. Exécutez le code, et tentez de comprendre pourquoi la phrase Le programme va se terminer. ne s'affiche pas avant que le programme ne quitte.
+
+3. --
+
+4. Elle lit de manière synchrone et de plus 
+If the encoding option is specified then this function returns a string. Otherwise it returns a buffer.
+
+
+Exercice 3
+
+Le troisième exercice est fait pour vous familiariser avec l'API du module http.
+
+Avec le module http, créer un serveur web qui écoute sur le port 8080 et sur l'ip 127.0.01 (localhost). Lorsqu'une connexion est effectué sur le serveur, retournez une chaine de caractère (*Hello World!*) et le code HTTP 200, ce qui signifie que la requête s'est déroulé avec succès et une simple ligne de texte. Ensuite utilisez un navigateur pour tester la page à l'adresse http://127.0.0.1:8080/.
+
+Il existe plusieurs code HTTP, mais les plus souvent utilisés sont : 404 (fichier/ressource non trouvé), 403 (accès interdit), 400 (mauvaise requête), 500 (erreur interne du serveur).
+
+Utiliser la méthode response.write pour retourner l'URL demandé. Par exemple, si on visite http://127.0.0.1:8080/inf4375, la chaîne de caractère inf4375 doit être retourné au navigateur comme réponse.
+
+L'URL d'une requête est disponible avec l'attribut url de l'objet de requête : http://nodejs.org/api/http.html#http_message_url.
