@@ -1,0 +1,5 @@
+ceci est un fichier texte de fred
+avec plein de belles lignes
+bla bla bla
+ah oui et j'oubliais
+bla bla bla
